@@ -3,5 +3,7 @@ body{
 }
 
 .home__img-2{
-  /* background-image: url(./assets/img-2.jpg); */
+  background-image: url('./assets/img-2.jpg');
+  height: 300px;
+  width: 100vw;
 }

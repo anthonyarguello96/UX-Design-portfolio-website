@@ -10,7 +10,8 @@ module.exports = {
   entry: './src/index.js',
   output:{
     filename: 'index.[contenthash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   module:{
     rules:[
@@ -21,8 +22,11 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader'
-
-      }
+      },
+      {
+       test: /\.(png|jpe?g)/,
+       type: 'asset/resource'
+     }
     ]
   },
   plugins: [
