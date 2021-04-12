@@ -6,13 +6,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: false,
-  mode: 'development',
+  // mode: 'development',
   entry: './src/index.js',
-  output:{
-    filename: 'index.[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'images/[hash][ext][query]'
-  },
+  // output:{
+  //   filename: 'index.[contenthash].js',
+  //   path: path.resolve(__dirname, 'dist'),
+  //   assetModuleFilename: 'images/[hash][ext][query]'
+  // },
   module:{
     rules:[
       {

@@ -4,7 +4,7 @@ import 'boxicons';
 const parallax = document.getElementsByClassName('skills__img');
 const spread = [...parallax];
 
-
+alert('whats poppin?');
 
 //Diplays nav-menu
 lib.displayMenu('nav-toggle', 'nav-menu');
