@@ -14,4 +14,15 @@ module.exports = merge(common,{
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[hash][ext][query]'
   },
+  module:{
+    rules: [
+      {
+      test: /\.css$/,
+      use:[
+        'style-loader', // Inject CSS into the DOM
+        'css-loader' // Converts out CSS into JS
+      ]
+    }
+    ]
+  }
 });

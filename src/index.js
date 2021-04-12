@@ -4,7 +4,7 @@ import 'boxicons';
 const parallax = document.getElementsByClassName('skills__img');
 const spread = [...parallax];
 
-alert('sirve o qué?');
+// alert('sirve o qué?');
 
 //Diplays nav-menu
 lib.displayMenu('nav-toggle', 'nav-menu');
