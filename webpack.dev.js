@@ -22,7 +22,7 @@ module.exports = merge(common,{
         'style-loader', // Inject CSS into the DOM
         'css-loader' // Converts out CSS into JS
       ]
-    }
+    },
     ]
   },
   plugins: [
