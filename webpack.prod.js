@@ -38,7 +38,15 @@ module.exports = merge(common,{
   optimization: {
     minimizer: [
       new CssMinimizerPlugin(),
-      new TerserPlugin()
+      new TerserPlugin(),
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      })
     ]
   }
 });
