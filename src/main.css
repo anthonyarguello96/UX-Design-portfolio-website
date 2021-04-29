@@ -635,10 +635,21 @@ margin: var(--mb-4);
 
 }
 
+.home__title-project1{
+  align-self: flex-end;
+  /* justify-self: center; */
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+  line-height: 1.2;
+}
 
 
+.home__title-project1 span{
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+}
 
-/* Desktop Mecia queries */
+
+/* Desktop Media queries */
 @media screen and (min-width: 1124px){
 body{
   margin:0;
@@ -832,6 +843,7 @@ margin-top: 8rem;
   justify-items: center;
 }
 
+}
 
 @media screen and (min-width:1733px){
   .bd-grid{
@@ -844,6 +856,71 @@ margin-top: 8rem;
     width: 1224px;
     margin-right: 2rem;
   }
+}
+
+
+/* Project1 CSS */
+
+.project1__intro-container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+
+.project1__intro-text{
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.presentation__btn-box{
+  background: green;
+  height:300px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 2rem;
+  margin:2rem;
+}
+
+.presentation_Box{
+  background: purple;
+}
+.figma_Box{
+  background: purple;
+}
+.miro_Box{
+  background: purple;
+}
+
+
+
+
+@media screen and (min-width: 1124px){
+body{
+  margin:0;
+}
+
+
+.project1__intro-container{
+  grid-template-columns: 100%;
+  display: grid;
+  /* justify-items: center; */
+}
+
+.project1__text-box{
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+  box-sizing: border-box;
+  font-size: var(--normal-font-size);
+  margin: 0 12rem;
 }
 
 }

@@ -26,7 +26,18 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: 'src/index.html',
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'project1.html',
+      template: 'src/project1.html',
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'project2.html',
+      template: 'src/project2.html',
       minify: false,
     }),
     new ESLintPlugin({

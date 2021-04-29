@@ -36,7 +36,26 @@ module.exports = merge(common, {
       new CssMinimizerPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
+        filename: 'index.[contenthash].html',
         template: './src/index.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'project1.html',
+        template: './src/project1.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'project2.html',
+        template: './src/project2.html',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
