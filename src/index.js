@@ -12,7 +12,7 @@ navLink.forEach((x) => x.addEventListener('click', lib.linkAction));
 
 // scroll sections active link
 const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', lib.scrollActive);
+window.addEventListener('scroll', lib.scrollActive(sections));
 
 // GOTTA MOVE THIS TO THE FUCNTIONS FILE
 

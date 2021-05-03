@@ -25,7 +25,7 @@ export const linkAction = () =>{
 
 
 //  Active section funciton
-export function scrollActive() {
+export function scrollActive(sections) {
   // GET VIEPORT VERTICAL POSITION
   const scrollY = window.pageYOffset;
 
